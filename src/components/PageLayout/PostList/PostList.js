@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './PostList.css'
 
 import Post from '../../Post/Post';
 
@@ -6,27 +7,79 @@ class PostList extends Component {
   state = {
     posts: [
       {
-        title: 'Lalalalalala'
+        title: 'Lalalalalala',
+        comments: [
+          {
+            text: '1'
+          },
+          {
+            text: '2'
+          }
+        ]
       },
       {
-        title: 'Lelelelele'
+        title: 'Lelelelele',
+        comments: [
+          {
+            text: '1'
+          }
+        ]
       },
       {
-        title: 'Lilililili'
-      }
+        title: 'Lilililili',
+        comments: [
+          {
+            text: '1'
+          },
+          {
+            text: '2'
+          },
+          {
+            text: '3'
+          }
+        ]
+      },
+      {
+        title: 'Lololololo',
+        comments: [
+          {
+            text: '1'
+          },
+          {
+            text: '2'
+          },
+          {
+            text: '3'
+          }
+        ]
+      },
+      {
+        title: 'Lulululu',
+        comments: [
+          {
+            text: '1'
+          },
+          {
+            text: '2'
+          },
+          {
+            text: '3'
+          }
+        ]
+      },
     ]
   };
 
   render() {
     return (
-      <section id="post-list">
+      <ul id="post-list">
         {this.state.posts.map((post, index) => (
           <Post
             key={index}
             post={post}
           />
         ))}
-      </section>
+      </ul>
     );
   }
 }

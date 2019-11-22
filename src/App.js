@@ -1,10 +1,14 @@
 import React from 'react';
 import './App.css'
 
-import TechList from './components/TechList';
+import Layout from './components/PageLayout/PageLayout';
 
 function App() {
-  return (<TechList />)
+  return (
+    <>
+      <Layout/>
+    </>  
+  );
 }
 
 export default App;

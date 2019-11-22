@@ -25,7 +25,7 @@ function Post({post}) {
         <p>{text}</p>
       </div>
       <div className="post-comments">
-        {comments.map((comment, index) => <Comment key={index} content={comment.text} />)}
+        {comments.map((comment, index) => <Comment key={index} content={comment} />)}
       </div>
     </li>
   );

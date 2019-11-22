@@ -6,3 +6,42 @@
   box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
   display: block;
 }
+
+.post-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-credits {
+  flex: 1 0;
+}
+
+.post-profile {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post-author, .post-date {
+  margin: 3px 0;
+}
+
+.post-author {
+  font-size: 14px;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+.post-date {
+  color: #9a9a9a;
+  font-size: 11px;
+}
+
+.post-content p {
+  line-height: 22px;
+  color: #3e3e3e;
+  font-size: 14px;
+}
